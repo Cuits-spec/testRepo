@@ -19,4 +19,8 @@ print(fu4(10,30,50,'kkk'))
 fu5 = lambda **kwargs:kwargs
 print(fu5(name=10,age=30))
 
+fu6 = lambda a,b:a if a > b else b
+print(fu6(0.5,1))
+
+
 
