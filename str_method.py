@@ -17,3 +17,5 @@ print(str3.lower())
 str4 = 'python修炼第一期.html'
 print(str4.replace('.html', ' '))
 print(str4.split('.html'))
+
+#
