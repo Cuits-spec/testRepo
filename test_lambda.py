@@ -22,5 +22,6 @@ print(fu5(name=10,age=30))
 fu6 = lambda a,b:a if a > b else b
 print(fu6(0.5,1))
 
+# fu7 = a if a < b else b
 
 
