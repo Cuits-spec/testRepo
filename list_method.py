@@ -74,3 +74,24 @@ def func2(y):
     return y % 2 == 0
 returt1 = filter(func2,list7)
 print(list(returt1))
+
+list7 = [2,5,6,7,8,9,2,9,9]
+# 末尾增加元素15
+list7.append(15)
+print(list7)
+# 中间插入元素20
+list7.insert(4,20)
+print(list7)
+# 将列表[2,5,6]合并到list7中
+list8 = [2,5,6]
+list7.append(list8)
+print(list7)
+# 移除列表中索引为3的元素
+list7.pop(3)
+print(list7)
+# 翻转列表里所有元素
+list7.reverse()
+print(list7)
+# 对列表进行排序，从大到小一次，从小到大一次
+# print(list7.sort())
+
