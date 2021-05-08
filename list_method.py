@@ -53,3 +53,24 @@ print(sum(list5)/len(list5))
 print(len(list5))
 # 找出元素6在列表的索引
 print(list5.index(6))
+
+# 计算列表内的各个元素的2次方
+list6 = [1,2,3,4,5]
+def func(x):
+    return x ** 2
+print(map(func,list6))
+print(list(map(func,list6)))
+
+# 计算列表内的各个元素的累加和
+import functools
+def func1(a,b):
+    return a + b
+returt = functools.reduce(func1,list6)
+print(returt)
+
+# 过滤列表元素
+list7 = [1,2,3,4,5,6,7,8,9]
+def func2(y):
+    return y % 2 == 0
+returt1 = filter(func2,list7)
+print(list(returt1))
