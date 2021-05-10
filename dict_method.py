@@ -26,3 +26,8 @@ print(max(list))
 # 获取字典中最小的value值
 print(min(list))
 # 字典dict2 = {'php':97}，将dict2数据更新到dict1中
+dict1['php'] = 97
+print(dict1)
+dict2 = {'css': 99}
+dict1.update(dict2)
+print(dict1)
