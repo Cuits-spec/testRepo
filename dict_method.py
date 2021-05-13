@@ -31,3 +31,12 @@ print(dict1)
 dict2 = {'css': 99}
 dict1.update(dict2)
 print(dict1)
+
+list1 = [1,3,5,2,7,9]
+for index in range(len(list1)):
+    print(list1[index])
+# 参照代码从后到前遍历
+for i in reversed(list1):
+    print(i)
+# 遍历输出所有偶数
+# 遍历输出大于3的奇数
