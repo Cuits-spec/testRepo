@@ -40,6 +40,6 @@ for i in reversed(list1):
     print(i)
 # 遍历输出所有偶数
 # 遍历输出大于3的奇数
-f = open('file_method.py', 'w')
+f = open('../file/file_method.py', 'w')
 import os
 os.remove('file_method')
