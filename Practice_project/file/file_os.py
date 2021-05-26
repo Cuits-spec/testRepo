@@ -8,5 +8,5 @@ print(os.getcwd())
 os.chdir('/Users/out/Documents')
 print(os.getcwd())
 
-file_list = os.listdir('/Users/out/Documents/testRepo/file')
+file_list = os.listdir('/Practice_project/file')
 print(file_list)
