@@ -1,0 +1,6 @@
+VMware Fusion虚拟机安装Windows10系统：
+https://blog.csdn.net/StillTogether/article/details/105398269?ops_request_misc=&request_id=&biz_id=102&utm_term=vmware%20fusion%E5%AE%89%E8%A3%85win10&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-4-.pc_search_result_before_js&spm=1018.2226.3001.4187
+虚拟机镜像下载地址（使用迅雷下载）：
+https://msdn.itellyou.cn/
+win10 mak 密钥激活教程：
+https://blog.csdn.net/yunhuaikong/article/details/100885313?utm_medium=distribute.pc_feed_404.none-task-blog-2~default~BlogCommendFromBaidu~default-2.nonecase&depth_1-utm_source=distribute.pc_feed_404.none-task-blog-2~default~BlogCommendFromBaidu~default-2.nonecas
