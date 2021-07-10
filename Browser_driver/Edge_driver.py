@@ -4,9 +4,9 @@ from selenium.webdriver.support.select import Select
 import time
 import pytest
 
-class
+
 # 谷歌
-driver = webdriver.Chrome('/Users/out/Documents/testRepo/Browser_driver/chromedriver')
+driver = webdriver.Chrome()
 # 最大化窗口
 driver.maximize_window()
 # 隐式等待
@@ -43,7 +43,7 @@ def zufang():
     except Exception as e:
         print('出问题了', e)
 
-
+zufang()
 
 
 
