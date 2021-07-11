@@ -1,0 +1,20 @@
+{
+  "test_login_001": {
+    "uesrnam": "15800000001",
+    "password": "error",
+    "yzm": "8888",
+    "sjjg": "密码错误!"
+  },
+  "test_login_002": {
+    "uesrnam": "15800000021",
+    "password": "123456",
+    "yzm": "8888",
+    "sjjg": "账号不存在!"
+  },
+  "test_login_003": {
+    "uesrnam": "15800000001",
+    "password": "",
+    "yzm": "8888",
+    "sjjg": "密码不能为空!"
+  }
+}
