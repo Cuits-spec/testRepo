@@ -6,46 +6,47 @@ import pytest
 
 
 # 谷歌
-driver = webdriver.Chrome()
+driver = webdriver.Chrome('/Users/out/Documents/testRepo/Browser_driver/chromedriver')
 # 最大化窗口
 driver.maximize_window()
 # 隐式等待
 driver.implicitly_wait(5)
 
-action = ActionChains(driver)
-title = driver.title
-url = driver.current_url
+driver.get('https://shanghai.baixing.com/')
+
+# action = ActionChains(driver)
+# title = driver.title
+# url = driver.current_url
 # Edge莫名其妙报错-放弃
 # driver = webdriver.Edge('/Users/out/Documents/testRepo/Browser_driver/MicrosoftWebDriver')
-def zufang():
-    driver.get('https://shanghai.baixing.com/')
-    try:
-        driver.find_element_by_xpath("//*[text()='[切换城市]']").click()
-        driver.find_element_by_xpath("//*[text()='上海']").click()
-        driver.find_element_by_xpath("//*[@placeholder='求职找房找服务']").send_keys('租房')
-        driver.find_element_by_xpath("//*[@title='搜索']").click()
-        driver.find_element_by_xpath("//*[text()='浦东新区']").click()
-        driver.find_element_by_css_selector("[name = '价格[0]']").send_keys(800)
-        driver.find_element_by_css_selector("[name = '价格[1]']").send_keys(2000)
-        driver.find_element_by_css_selector("[value = '筛选']").click()
-
-        driver.find_element_by_xpath("//select[1]").click()
-        driver.find_element_by_xpath("//option[text()='1室']").click()
-        time.sleep(0.5)
-        driver.find_element_by_xpath("//select[2]").click()
-        driver.find_element_by_xpath("//option[text()='东南']").click()
-        time.sleep(0.5)
-        driver.find_element_by_xpath("//select[3]").click()
-        driver.find_element_by_xpath("//option[text()='中']").click()
-        time.sleep(0.5)
-        # 伪元素::before 定位 https://blog.csdn.net/qq_38542085/article/details/78495350
-        driver.find_element_by_css_selector("i.icon-side-chat").click()
-    except Exception as e:
-        print('出问题了', e)
-
-zufang()
 
 
 
+
+driver.find_element_by_xpath("//*[text()='[切换城市]']").click()
+driver.find_element_by_xpath("//*[text()='上海']").click()
+driver.find_element_by_xpath("//*[@placeholder='求职找房找服务']").send_keys('租房')
+driver.find_element_by_xpath("//*[@title='搜索']").click()
+driver.find_element_by_xpath("//*[text()='浦东新区']").click()
+driver.find_element_by_css_selector("[name = '价格[0]']").send_keys(800)
+driver.find_element_by_css_selector("[name = '价格[1]']").send_keys(2000)
+driver.find_element_by_css_selector("[value = '筛选']").click()
+driver.find_element_by_xpath("//select[1]").click()
+driver.find_element_by_xpath("//option[text()='1室']").click()
+time.sleep(0.5)
+driver.find_element_by_xpath("//select[2]").click()
+driver.find_element_by_xpath("//option[text()='东南']").click()
+time.sleep(0.5)
+driver.find_element_by_xpath("//select[3]").click()
+driver.find_element_by_xpath("//option[text()='中']").click()
+time.sleep(0.5)
+# 伪元素::before 定位 https://blog.csdn.net/qq_38542085/article/details/78495350
+driver.find_element_by_css_selector("i.icon-side-chat").click()
+
+# driver.find_element_by_xpath("//*[contains(text(),'对应账户')]").click()
+try:
+    driver.find_element_by_xpath("//*[contains(text(),'对应')]").send_keys(111)
+except Exception as i:
+    print(i)
 time.sleep(3)
 driver.quit()
