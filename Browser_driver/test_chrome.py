@@ -55,3 +55,4 @@ class Testchrome:
         c = self.driver.find_element_by_xpath("//*[contains(text(),'哈哈')]").text
         print(f'发送的是：{c}')
 
+print(11)
