@@ -3,6 +3,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.support.select import Select
 import time
 import pytest
+# import grequest_throttle
 
 
 # 谷歌
@@ -41,12 +42,19 @@ driver.find_element_by_xpath("//select[3]").click()
 driver.find_element_by_xpath("//option[text()='中']").click()
 time.sleep(0.5)
 # 伪元素::before 定位 https://blog.csdn.net/qq_38542085/article/details/78495350
+# 弹出新窗口
 driver.find_element_by_css_selector("i.icon-side-chat").click()
+# 获取所有句柄
+handles = driver.window_handles
+# 句柄返回的列表最新的是-1
+driver.switch_to.window(handles[-1])
+print(driver.title)
+time.sleep(1)
 
-# driver.find_element_by_xpath("//*[contains(text(),'对应账户')]").click()
-try:
-    driver.find_element_by_xpath("//*[contains(text(),'对应')]").send_keys(111)
-except Exception as i:
-    print(i)
+# driver.find_element_by_xpath("//*[text()='手机号不用如何换绑']").click()
+
+a = driver.find_element_by_xpath("//*[contains(text(),'可以')]").text
+print(f'你是谁：{a}')
+
 time.sleep(3)
 driver.quit()

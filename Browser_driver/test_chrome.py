@@ -79,7 +79,7 @@ class Testchrome:
         # 句柄返回的列表最新的是-1
         self.driver.switch_to.window(handles[-1])
         print(self.driver.title)
-        time.sleep(1)
+        time.sleep(1)git
 
         a = self.driver.find_element_by_xpath("//*[contains(text(),'可以')]").text
         print(f'你是谁：{a}')
